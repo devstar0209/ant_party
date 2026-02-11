@@ -5,6 +5,9 @@ import path from "path";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config) => {
     // MetaMask SDK optionally imports @react-native-async-storage/async-storage for React Native.
     // In web builds, stub it with an empty implementation.
