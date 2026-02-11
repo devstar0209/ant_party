@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rc-slider-dot {
+    display: none !important
+}
+
+.rc-slider-mark-text {
+    cursor: default !important;
+}
