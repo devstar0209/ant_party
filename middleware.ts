@@ -4,5 +4,7 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 
 export const config = {
-    matcher: ["/", "/(pt|en)/:path*"], // At this line, define into the matcher all the availables language you have defined into routing.ts
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico).*)",
+  ],
 };
